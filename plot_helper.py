@@ -1,4 +1,4 @@
-simport numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 cls=['#2b8cbe','#31a354','#e34a33','#fed976','#756bb1']#,'cyan','black']
 
