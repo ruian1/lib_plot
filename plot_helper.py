@@ -1,4 +1,4 @@
-import numpy as np
+simport numpy as np
 import matplotlib.pyplot as plt
 cls=['#2b8cbe','#31a354','#e34a33','#fed976','#756bb1']#,'cyan','black']
 
@@ -100,7 +100,7 @@ def make_stack_plot(df_all, title):
 #     ax.set_title(title, fontsize=14)
 #     ax.set_ylim(0,3500)
 #     plt.legend()
-    plt.savefig("/Users/dayajun/Desktop/stacked_%s.png"%title)
+#     plt.savefig("/Users/dayajun/Desktop/stacked_%s.png"%title)
 
     fig, ax2= plt.subplots(1,1,figsize=(8,6))
     ax2.hist([bins], len(bins), weights = [n_electron/np.sum(n_electron)], edgecolor='black', \
@@ -113,4 +113,4 @@ def make_stack_plot(df_all, title):
 
     ymax = ax1.get_ylim()[1]
     ax1.text(0.55, 0.9 * ymax,"MicroBooNE Simulation", fontsize=15)
-    plt.savefig("/Users/dayajun/Desktop/e_gamma_%s.png"%title)
+#   plt.savefig("/Users/dayajun/Desktop/e_gamma_%s.png"%title)
